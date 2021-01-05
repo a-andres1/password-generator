@@ -8,3 +8,4 @@ First things first, what is a Readonly id? Readonly means you can't modify the t
 
 The textarea tag is also new. Seems to be mostly used with forms to set a specific height/width and can contain an infinite amount of characters. 
 
+Added some JS for grabbing upper and lower case letters. Want to write one for numbers next. 

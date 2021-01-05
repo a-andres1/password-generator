@@ -11,20 +11,21 @@ function writePassword() {
   // Functions
   function randomLower() {
     return String.fromCharCode(Math.floor(Math.random () *26) + 97);
-
   }
   
   function randomUpper() {
     return String.fromCharCode(Math.floor(Math.random () *26) + 65);
   } 
   
-
+  function randomNumber () {
+    return String.fromCharCode(Math.floor(Math.random () *10) + 48);
+  }
 
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-console.log(String.fromCharCode(Math.floor(Math.random () *26) + 97))
-console.log(String.fromCharCode(Math.floor(Math.random () *26) + 65))
-
+console.log(String.fromCharCode(Math.floor(Math.random () *26) + 97));
+console.log(String.fromCharCode(Math.floor(Math.random () *26) + 65));
+console.log(String.fromCharCode(Math.floor(Math.random () *10) + 48));
