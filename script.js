@@ -48,14 +48,14 @@ function writePassword() {
         }
       }
       
-
-
-      var upper = confirm("How bout some big'uns?");
-
-      var num = confirm("How bout some numbies?");
-
-      var specChar = confirm("You wanna get fancy up in here and have a special character to keep those |-|4(|<3|25 away?");
-
+      var lower = confirm("Should your password include lower case letters?")
+      console.log (lower)
+      var upper = confirm("Should your passwrod include upper case letters?");
+      console.log (upper)
+      var num = confirm("Should your password include numbers?");
+      console.log (num)
+      var specChar = confirm("Should your password include special characters?");
+      console.log (specChar)
 
       // Functions for getting random numbers and letters
       function randomLower() {
@@ -69,9 +69,6 @@ function writePassword() {
       function randomNumber() {
         return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
       }
-
-
-
 
 
     }
