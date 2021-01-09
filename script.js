@@ -21,34 +21,32 @@ function writePassword() {
     // validate how many characters in code
     while (true) {
       var passLength = prompt("Please enter a number between 8 and 128.");
-      console.log(passLength);
+      console.log(typeof passLength);
       if (passLength >= 8 && passLength <= 128) {
         console.log("length " + passLength);
         break;
-        
       }
 
+      // cancel displays alert, breaks while loop
       else if (!passLength) {
         alert("You have cancelled.");
         break;
       }
 
+      // rejects string
       else if (passLength === "") {
         alert("Please enter a number to continue.");
         continue;
       }
 
-      else if (passLength <= 7) {
-        alert("Please enter a number between 8 and 128.");
-        continue;
-      }
-
+      // all other options
       else {
         alert("Please enter a number to continue.");
         continue;
       }
     }
-
+  
+    //if statement to run prompts once number is validated.  
     if (passLength >= 8 && passLength <=128){
 
     var lower = confirm("Should your password include lower case letters?");
@@ -61,54 +59,49 @@ function writePassword() {
     console.log(specChar);
     }
 
+    // turns passLength string into number
+    var length = parseInt(passLength, 10);
+    console.log(typeof length);
 
-    // functions for generating characters
+    for (let i = 0; i = length;){
+      if (lower === true){
+        return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+      }
 
-    console.log(randomLower)
-    console.log(randomUpper)
-    console.log(randomNumber)
-    console.log(randomChar)
+      else if (upper === true) {
+        return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+      }
 
-    // Functions for getting random numbers and letters
-    function randomLower() {
-      return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+      else if (num === true) {
+        return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+      }
+
+      else if (specChar === true) {
+        // Code that gets random punctuation - goes with var characters
+        entity1 = Math.ceil(characters.length * Math.random() * Math.random());
+        character = entity1
+        return String.characters.charAt(entity1)
+      }
+
+      else {
+        alert("No valid selection made");
+        break;
+  
+      }
+
+
     }
-
-    function randomUpper() {
-      return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-    }
-
-    function randomNumber() {
-      return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
-    }
-
-    function randomChar() {
-      entity1 = Math.ceil(characters.length * Math.random() * Math.random());
-      character = entity1
-      return String.characters.charAt(entity1)
-    }
-
-
   }
-
-
 }
 
+  
 
-// Code that gets random punctuation - goes with var characters
-//to print punctuation use this
+
+
+
 
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
-// console logs to check code
-
-
-// console.log(String.fromCharCode(Math.floor(Math.random() * 26) + 97));
-// console.log(String.fromCharCode(Math.floor(Math.random() * 26) + 65));
-// console.log(String.fromCharCode(Math.floor(Math.random() * 10) + 48));
-// console.log(characters.charAt(entity1));
 
 
