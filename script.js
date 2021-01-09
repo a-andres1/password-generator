@@ -2,21 +2,100 @@
 var generateBtn = document.querySelector("#generate");
 
 // My Variables 
+var numericCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+var lowerCasedCharacters = [
+  'a',
+  'b',
+  'c',
+  'd',
+  'e',
+  'f',
+  'g',
+  'h',
+  'i',
+  'j',
+  'k',
+  'l',
+  'm',
+  'n',
+  'o',
+  'p',
+  'q',
+  'r',
+  's',
+  't',
+  'u',
+  'v',
+  'w',
+  'x',
+  'y',
+  'z'
+];
 
-var characters = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"  //variable for code that grabs special characters
+var upperCasedCharacters = [
+  'A',
+  'B',
+  'C',
+  'D',
+  'E',
+  'F',
+  'G',
+  'H',
+  'I',
+  'J',
+  'K',
+  'L',
+  'M',
+  'N',
+  'O',
+  'P',
+  'Q',
+  'R',
+  'S',
+  'T',
+  'U',
+  'V',
+  'W',
+  'X',
+  'Y',
+  'Z'
+];
 
+var specialCharacters = [
+  '@',
+  '%',
+  '+',
+  '\\',
+  '/',
+  "'",
+  '!',
+  '#',
+  '$',
+  '^',
+  '?',
+  ':',
+  ',',
+  ')',
+  '(',
+  '}',
+  '{',
+  ']',
+  '[',
+  '~',
+  '-',
+  '_',
+  '.'
+];
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
-
+  
+}
 
   function generatePassword() {
-
-    // Prompts and confirms for password length and character choices
 
     // validate how many characters in code
     while (true) {
@@ -45,63 +124,62 @@ function writePassword() {
         continue;
       }
     }
-  
-    //if statement to run prompts once number is validated.  
-    if (passLength >= 8 && passLength <=128){
 
-    var lower = confirm("Should your password include lower case letters?");
-    console.log(lower);
-    var upper = confirm("Should your password include upper case letters?");
-    console.log(upper);
-    var num = confirm("Should your password include numbers?");
-    console.log(num);
-    var specChar = confirm("Should your password include special characters?");
-    console.log(specChar);
+    //if statement to run prompts once number is validated.  
+    if (passLength >= 8 && passLength <= 128) {
+
+      var lower = confirm("Should your password include lower case letters?");
+      console.log(lower);
+      var upper = confirm("Should your password include upper case letters?");
+      console.log(upper);
+      var num = confirm("Should your password include numbers?");
+      console.log(num);
+      var specChar = confirm("Should your password include special characters?");
+      console.log(specChar);
     }
 
     // turns passLength string into number
     var length = parseInt(passLength, 10);
     console.log(typeof length);
 
-    for (let i = 0; i = length;){
-      if (lower === true){
-        return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+    var resultsArray = []
+
+    
+      
+      if (lower === true) {
+        resultsArray = resultsArray.concat(lowerCasedCharacters);
+        console.log(resultsArray + "lasdf");
       }
 
-      else if (upper === true) {
-        return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+       if (upper === true) {
+        resultsArray = resultsArray.concat(upperCasedCharacters);
       }
 
-      else if (num === true) {
-        return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+       if (num === true) {
+        resultsArray = resultsArray.concat(numericCharacters);
       }
 
-      else if (specChar === true) {
-        // Code that gets random punctuation - goes with var characters
-        entity1 = Math.ceil(characters.length * Math.random() * Math.random());
-        character = entity1
-        return String.characters.charAt(entity1)
+       if (specChar === true) {
+        resultsArray = resultsArray.concat(specialCharacters);
       }
 
       else {
-        alert("No valid selection made");
-        break;
-  
-      }
+      alert("No valid selection made");
+    }
 
+    var randomPass = ""
+
+    for (let i = 0; i < length; i++) {
+      randomPass = randomPass + resultsArray[Math.floor(Math.random()*resultsArray.length)]
+      console.log(randomPass);
 
     }
+
+    return randomPass
+
   }
-}
-
-  
-
-
-
-
 
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
 
