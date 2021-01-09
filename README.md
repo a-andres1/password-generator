@@ -14,4 +14,7 @@ Found a solution for my special characters. Made them into a variable as a strin
 
 Got a bunch of loops to figure out next though and that feels a bit intimidating. 
 
-Added my prompts so that I can start track what needs to go with what. I'm still going to need to tell my code "if this prompt returns false, that means no lower case letters" etc. But for now at least I have those. I don't know if they're in the right place. I don't think they are. Also, they are not prompts, but confirms. 
+Added my prompts so that I can start track what needs to go with what. I'm still going to need to tell my code "if this prompt returns false, that means no lower case letters" etc. But for now at least I have those. I don't know if they're in the right place. I don't think they are. Also, they are not prompts, but confirms.
+
+
+PSUEDO CODING 
