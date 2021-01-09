@@ -48,14 +48,14 @@ function writePassword() {
         }
       }
       
-      var lower = confirm("Should your password include lower case letters?")
-      console.log (lower)
+      var lower = confirm("Should your password include lower case letters?");
+      console.log (lower);
       var upper = confirm("Should your passwrod include upper case letters?");
-      console.log (upper)
+      console.log (upper);
       var num = confirm("Should your password include numbers?");
-      console.log (num)
+      console.log (num);
       var specChar = confirm("Should your password include special characters?");
-      console.log (specChar)
+      console.log (specChar);
 
       // Functions for getting random numbers and letters
       function randomLower() {
@@ -70,6 +70,12 @@ function writePassword() {
         return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
       }
 
+      function randomChar () {
+        entity1 = Math.ceil(characters.length * Math.random() * Math.random());
+        character = entity1
+        return String.characters.charAt(entity1)
+      }
+
 
     }
 
@@ -78,9 +84,7 @@ function writePassword() {
 
 
 // Code that gets random punctuation - goes with var characters
-entity1 = Math.ceil(characters.length * Math.random() * Math.random());
-character = entity1
-characters.charAt(entity1) //to print punctuation use this
+ //to print punctuation use this
 
 
 // Add event listener to generate button

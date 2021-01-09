@@ -18,3 +18,9 @@ Added my prompts so that I can start track what needs to go with what. I'm still
 
 
 PSUEDO CODING 
+For buidling the password.
+
+Get all the true/falses from the comfirms. 
+Use a for loop to cycle through the character choice code.
+Take those generated charaters and create a string. 
+Print that string to the page.
