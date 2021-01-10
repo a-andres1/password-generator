@@ -1,5 +1,25 @@
 # password-generator
 
+## Write-Up
+
+This homework felt particularly complicated for me. 
+
+I put in a lot of hours, but I'm still a bit shaky when it comes to Javascript. I'm looking forward to working with it more to really get the hang of it. 
+
+I do feel like on a conceptual level I understand Javascript,  but writing it is difficult because my Javascript Google-fu still has a long way to go. Reading Eloquent Javascript is really helping me out and definitely helped me out with some of the issues I came across in this exercise. 
+
+Ultimately, it seemed like I was over complicating some earlier code and using an array really made it much easier to get the logic to work the way it was supposed to. I'm slowly learning how helpful it is to make elements that you can manipulate later with different functions. 
+
+For me, drawing this out and psuedo coding made it clear what I needed to do, but the actual writing is still slow right now. 
+
+At the end of the day I actually managed to finish it, so that's what I'm most proud of at this point. 
+
+## Screenshot:
+
+![passwordgen] (./Assets.passwordgen.png)
+
+
+
 
 
 ## Notes:
