@@ -16,7 +16,7 @@ At the end of the day I actually managed to finish it, so that's what I'm most p
 
 ## Screenshot:
 
-![password gen screenshot](./Assets.passwordgen.png)
+![password gen screenshot](./Assets/passwordgen.png)
 
 
 
