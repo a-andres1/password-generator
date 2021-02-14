@@ -23,6 +23,7 @@ At the end of the day I actually managed to finish it, so that's what I'm most p
 ## Usage
 
 ## Credits
+Shoutout to [James Meier](https://github.com/jamesMeier) for his help on this one. It was tough.  
 
 ## License Info 
 MIT License
