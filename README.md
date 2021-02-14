@@ -49,8 +49,8 @@ SOFTWARE.
 [License](LICENSE)
 
 ## Links
-[Repo]()
-[Site]()
+[Repo](https://github.com/a-andres1/password-generator)
+[Site](https://a-andres1.github.io/password-generator/)
 
 ## Contact Info
 [email me](mailto:alyssaandres1@gmail.com)  
