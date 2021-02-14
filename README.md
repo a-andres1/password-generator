@@ -17,10 +17,8 @@ For me, drawing this out and psuedo coding made it clear what I needed to do, bu
 At the end of the day I actually managed to finish it, so that's what I'm most proud of at this point. 
 
 ## Technologies Used
-
-## Install
-
-## Usage
+Javascript  
+jQuery  
 
 ## Credits
 Shoutout to [James Meier](https://github.com/jamesMeier) for his help on this one. It was tough.  
