@@ -14,7 +14,9 @@ Ultimately, it seemed like I was over complicating some earlier code and using a
 
 For me, drawing this out and psuedo coding made it clear what I needed to do, but the actual writing is still slow right now. 
 
-At the end of the day I actually managed to finish it, so that's what I'm most proud of at this point. 
+At the end of the day I actually managed to finish it, so that's what I'm most proud of at this point.  
+
+![gif](./Assets/password.gif)
 
 ## Technologies Used
 Javascript  
