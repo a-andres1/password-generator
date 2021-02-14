@@ -1,5 +1,7 @@
 # password-generator
 
+![password gen screenshot](./Assets/passwordgen.png)
+
 ## Write-Up
 
 This homework felt particularly complicated for me. 
@@ -14,15 +16,49 @@ For me, drawing this out and psuedo coding made it clear what I needed to do, bu
 
 At the end of the day I actually managed to finish it, so that's what I'm most proud of at this point. 
 
-## Screenshot:
+## Technologies Used
 
-![password gen screenshot](./Assets/passwordgen.png)
+## Install
+
+## Usage
+
+## Credits
+
+## License Info 
+MIT License
+
+Copyright (c) 2021 a-andres1
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+[License](LICENSE)
+
+## Links
+[Repo]()
+[Site]()
+
+## Contact Info
+[email me](mailto:alyssaandres1@gmail.com)  
+[find me on github](https://github.com/a-andres1)
 
 
-
-
-
-## Notes:
+___
+### Notes:
 
 First things first, what is a Readonly id? Readonly means you can't modify the text in any way. So a readonly id makes it impossible for me to copy/paste from the password generator box. I assume that after we have generated the password we should be able to cut/paste things. 
 
